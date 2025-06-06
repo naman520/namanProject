@@ -11,7 +11,7 @@ export default function Hero({ setActiveSection }) {
         className="space-y-8"
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+          className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-cyan-800"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
@@ -20,7 +20,7 @@ export default function Hero({ setActiveSection }) {
         </motion.h1>
         
         <motion.p
-          className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto"
+          className="text-xl md:text-2xl text-cyan-600 max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
@@ -38,7 +38,7 @@ export default function Hero({ setActiveSection }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveSection(3)}
-            className="px-8 py-3 bg-white text-gray-900 rounded-full font-semibold"
+            className="px-8 py-3 bg-white border border-black text-gray-900 rounded-full font-semibold"
           >
             Shop Now
           </motion.button>
@@ -46,7 +46,7 @@ export default function Hero({ setActiveSection }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveSection(1)}
-            className="px-8 py-3 border border-white text-white rounded-full font-semibold"
+            className="px-8 py-3 border border-black text-emerald-700 rounded-full font-semibold"
           >
             Explore Features
           </motion.button>
@@ -59,7 +59,7 @@ export default function Hero({ setActiveSection }) {
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        <div className="relative w-full max-w-3xl mx-auto">
+        <div className="relative w-full text-indigo-700 max-w-3xl mx-auto">
           <motion.img
             src="/sofa.png" // Replace with your image
             alt="Premium Sofa"

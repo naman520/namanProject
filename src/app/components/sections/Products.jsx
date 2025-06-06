@@ -33,10 +33,10 @@ export default function Products() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-gray-800 mb-4">
           Our Collection
         </h2>
-        <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-500 max-w-2xl mx-auto">
           Curated selection of modern furniture pieces
         </p>
       </motion.div>
@@ -49,7 +49,7 @@ export default function Products() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.03 }}
-            className="group relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-md border border-white/10"
+            className="group relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-md border border-cyan-500/10 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <div className="h-64 bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
               <Image
@@ -60,10 +60,10 @@ export default function Products() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">{product.name}</h3>
-              <p className="text-gray-300 mb-4">{product.description}</p>
+              <h3 className="text-2xl font-bold text-blue-700 mb-2">{product.name}</h3>
+              <p className="text-black mb-4">{product.description}</p>
               <div className="flex justify-between items-center">
-                <span className="text-xl font-bold text-white">{product.price}</span>
+                <span className="text-xl font-bold text-black">{product.price}</span>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

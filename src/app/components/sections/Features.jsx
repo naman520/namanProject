@@ -33,10 +33,10 @@ export default function Features() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-4">
+        <h2 className="text-4xl md:text-5xl text-teal-800 font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text mb-4">
           Unmatched Quality
         </h2>
-        <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+        <p className="text-xl text-teal-800 max-w-2xl mx-auto">
           Every piece is designed with care to transform your living space
         </p>
       </motion.div>
@@ -52,8 +52,8 @@ export default function Features() {
             className="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10"
           >
             <div className="text-4xl mb-4">{feature.icon}</div>
-            <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-            <p className="text-gray-300">{feature.description}</p>
+            <h3 className="text-xl font-semibold mb-2 text-slate-600">{feature.title}</h3>
+            <p className="text-slate-600">{feature.description}</p>
           </motion.div>
         ))}
       </div>

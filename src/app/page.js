@@ -95,7 +95,7 @@ export default function Home() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className={`w-full h-full absolute top-0 left-0 ${sections[activeSection].bg}`}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-cyan-100 " />
           <div className="relative z-10 w-full h-full flex items-center justify-center px-4 overflow-y-auto">
             {React.createElement(sections[activeSection].component, {
               setActiveSection,

@@ -12,7 +12,7 @@ export default function FloatingParticles() {
       {particles.map((particle) => (
         <div
           key={particle.id}
-          className="absolute w-1 h-1 bg-white rounded-full opacity-20 animate-pulse"
+          className="absolute w-1 h-1  rounded-full opacity-20 animate-pulse"
           style={{
             left: `${particle.left}%`,
             width: `${particle.size}px`,

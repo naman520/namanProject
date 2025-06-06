@@ -12,7 +12,7 @@ export default function Section({ children, gradient }) {
       className="w-full h-screen flex items-center justify-center text-white px-4 text-center relative overflow-hidden"
       style={{ background: gradient }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-10" />
+      <div className="absolute inset-0 bg-blue-500 bg-opacity-10" />
       <div className="relative z-10 w-full max-w-6xl mx-auto">
         {children}
         <FloatingParticles />

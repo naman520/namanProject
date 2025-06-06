@@ -28,10 +28,10 @@ export default function Testimonials() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-teal-800 mb-4">
           Happy Customers
         </h2>
-        <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
           Hear what our customers say about our products
         </p>
       </motion.div>
@@ -44,13 +44,13 @@ export default function Testimonials() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ y: -5 }}
-            className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10"
+            className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-black"
           >
-            <div className="text-4xl mb-4">"</div>
-            <p className="text-lg italic text-gray-200 mb-6">{testimonial.quote}</p>
+            <div className="text-4xl mb-4"></div>
+            <p className="text-lg italic font-semibold text-gray-900 mb-6">{testimonial.quote}</p>
             <div>
-              <div className="font-semibold text-white">{testimonial.author}</div>
-              <div className="text-sm text-gray-400">{testimonial.role}</div>
+              <div className="font-semibold text-blue-900">{testimonial.author}</div>
+              <div className="text-sm text-gray-600">{testimonial.role}</div>
             </div>
           </motion.div>
         ))}

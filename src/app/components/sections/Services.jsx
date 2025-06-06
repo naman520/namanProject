@@ -58,7 +58,7 @@ export default function Services() {
               y: -10,
               boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
             }}
-            className="group relative p-6 bg-white bg-opacity-5 backdrop-blur-md rounded-2xl border border-white border-opacity-10 transition-all duration-300"
+            className="group relative p-6 bg-black bg-opacity-5 backdrop-blur-md rounded-2xl border border-white border-opacity-10 transition-all duration-300"
           >
             <motion.div 
               className="text-4xl mb-4"

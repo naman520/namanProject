@@ -22,7 +22,7 @@ export default function SectionIndicator({ sections, activeSection, setActiveSec
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -10 }}
-              className="text-xs text-white hidden md:block"
+              className="text-lg text-black font-semibold hidden md:block"
             >
               {["Home", "Features", "Products", "Reviews", "Pricing", "Contact"][index]}
             </motion.span>

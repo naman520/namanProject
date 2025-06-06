@@ -49,10 +49,10 @@ export default function Pricing() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-cyan-900 mb-4">
           Complete Packages
         </h2>
-        <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+        <p className="text-xl text-cyan-800 max-w-2xl mx-auto">
           Curated bundles for every home and budget
         </p>
       </motion.div>
@@ -76,8 +76,8 @@ export default function Pricing() {
                 MOST POPULAR
               </div>
             )}
-            <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
-            <div className="text-4xl font-bold text-white mb-6">{plan.price}</div>
+            <h3 className="text-2xl font-bold text-teal-600 mb-2">{plan.name}</h3>
+            <div className="text-4xl font-bold text-teal-900 mb-6">{plan.price}</div>
             <ul className="space-y-3 mb-8">
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex items-start">
@@ -94,7 +94,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  <span className="text-gray-300">{feature}</span>
+                  <span className="text-emerald-700">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -104,7 +104,7 @@ export default function Pricing() {
               className={`w-full py-3 rounded-full font-semibold ${
                 plan.popular
                   ? "bg-emerald-500 text-white"
-                  : "bg-white/10 text-white hover:bg-white/20"
+                  : "bg-white/10 text-cyan-800 hover:bg-white/20"
               }`}
             >
               Get Started
